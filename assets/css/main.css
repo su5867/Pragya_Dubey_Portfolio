@@ -195,10 +195,10 @@ footer { padding-block: 20px; border-top: 1px solid var(--line); background: var
   display: grid;
   grid-template-columns: minmax(0, 1.18fr) minmax(260px, .82fr);
   align-items: center;
-  gap: clamp(50px, 8vw, 112px);
+  gap: clamp(24px, 4vw, 56px);
   padding-block: 58px 68px;
 }
-.hero-portrait { display: block; grid-column: 2; grid-row: 1; width: min(100%, 350px); justify-self: end; }
+.hero-portrait { display: block; grid-column: 2; grid-row: 1; width: min(100%, 350px); justify-self: start; }
 .portrait-frame {
   width: 100%;
   aspect-ratio: 1;
@@ -222,7 +222,7 @@ footer { padding-block: 20px; border-top: 1px solid var(--line); background: var
 .hero-hobbies li { padding: 5px 12px; border: 1px solid #dfe1d8; border-radius: 999px; color: #626d64; font-size: 10px; }
 
 @media (max-width: 850px) {
-  .hero-grid { min-height: 580px; grid-template-columns: minmax(0, 1.2fr) minmax(210px, .8fr); gap: 38px; }
+  .hero-grid { min-height: 580px; grid-template-columns: minmax(0, 1.2fr) minmax(210px, .8fr); gap: 24px; }
   .hero-portrait { width: min(100%, 285px); }
   .hero h1 { font-size: clamp(51px, 7vw, 68px); }
   .hero-intro { font-size: 12px; }
