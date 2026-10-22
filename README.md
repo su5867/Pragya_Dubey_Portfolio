@@ -30,11 +30,7 @@ Then visit `http://localhost:8000`.
 ## Updating the portfolio
 
 - Edit text, sections, and image alternative text in `index.html`.
-- Update colors, spacing, responsive rules, and hero image timing in `assets/css/main.css`.
+- Update the color palette, typography, spacing, and responsive rules in `assets/css/main.css`.
 - Replace photos in `assets/images/` while keeping their filenames, or update the corresponding paths in both HTML and CSS.
 
-The page has no JavaScript dependencies. Google Fonts are optional; the CSS includes local serif and sans-serif fallbacks.
-
-## Hero background photo credit
-
-The static hero landscape is hosted by Unsplash and credited in the page footer: [Phulchowki Mountain, Nepal](https://unsplash.com/photos/mountain-range-under-golden-hour-clouds-4So41pYdQS4) by Chandan Chaurasia. It is available under the Unsplash License. The portfolio needs an internet connection to load it.
+The page has no JavaScript dependencies. Poppins loads from Google Fonts when online and falls back to the system sans-serif font when offline.
