@@ -198,7 +198,7 @@ footer { padding-block: 20px; border-top: 1px solid var(--line); background: var
   gap: clamp(50px, 8vw, 112px);
   padding-block: 58px 68px;
 }
-.hero-portrait { grid-column: 2; grid-row: 1; width: min(100%, 350px); justify-self: end; }
+.hero-portrait { display: block; grid-column: 2; grid-row: 1; width: min(100%, 350px); justify-self: end; }
 .portrait-frame {
   width: 100%;
   aspect-ratio: 1;
@@ -208,12 +208,12 @@ footer { padding-block: 20px; border-top: 1px solid var(--line); background: var
   background: var(--sage);
   box-shadow: 18px 18px 0 #e3e9df;
 }
-.portrait-frame img { object-position: 50% 23%; }
+.portrait-frame img { object-position: 50% 23%; transform: scale(1.15); }
 .hero-portrait figcaption { margin-top: 18px; color: var(--ink); font-size: 11px; text-align: left; }
 .hero-portrait figcaption span { color: var(--muted); }
 .hero-text { grid-column: 1; grid-row: 1; max-width: 580px; text-align: left; }
 .hero .eyebrow { justify-content: flex-start; }
-.hero h1 { margin: 21px 0 3px; color: var(--ink); font-size: clamp(58px, 7.1vw, 88px); letter-spacing: -.075em; line-height: 1.02; }
+.hero h1 { margin: 21px 0 12px; color: var(--ink); font-size: clamp(54px, 6.5vw, 76px); letter-spacing: -.065em; line-height: 1.06; }
 .hero h1 em { color: var(--green); }
 .hero-role { color: var(--clay); font-size: 12px; font-weight: 600; letter-spacing: .015em; }
 .hero-intro { max-width: 450px; margin: 22px 0 0; font-size: 14px; line-height: 1.9; }
