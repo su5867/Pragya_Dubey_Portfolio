@@ -9,6 +9,7 @@
   --green-dark: #243f34;
   --sage: #dfe8de;
   --clay: #c8664b;
+  --gold: #a77a2e;
   --line: #dedfd6;
   --font: 'Poppins', 'Segoe UI', sans-serif;
 }
@@ -32,30 +33,29 @@ nav a:hover { color: var(--clay); }
 nav .nav-contact { color: var(--green); font-weight: 600; }
 
 /* Intro */
-.hero { position: relative; overflow: hidden; background: var(--paper); }
-.hero-grid { min-height: 590px; display: grid; grid-template-columns: 1fr 380px; align-items: center; gap: 95px; padding-block: 60px 75px; }
-.hero-text { max-width: 640px; }
+.hero { position: relative; overflow: hidden; background: var(--white); }
+.hero-grid { min-height: 790px; display: flex; flex-direction: column; align-items: center; gap: 17px; padding-block: 42px 62px; }
+.hero-text { width: 100%; max-width: 620px; text-align: center; }
 .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--green); font-size: 9px; font-weight: 600; letter-spacing: .17em; text-transform: uppercase; }
+.hero .eyebrow { justify-content: center; }
 .eyebrow-line { width: 24px; height: 1px; background: var(--clay); }
-.hero h1 { margin: 22px 0 18px; color: var(--ink); font-size: clamp(43px, 5.8vw, 70px); font-weight: 600; letter-spacing: -.065em; line-height: 1.12; }
-.hero h1 em { color: var(--green); font-style: normal; font-weight: 500; }
-.hero-intro { max-width: 470px; color: var(--muted); font-size: 13px; line-height: 2; }
+.hero h1 { margin: 12px 0 11px; color: #90928e; font-size: clamp(47px, 6vw, 65px); font-weight: 700; letter-spacing: -.07em; line-height: 1.03; }
+.hero h1 em { color: var(--gold); font-style: normal; font-weight: 700; }
+.hero-intro { max-width: 485px; margin-inline: auto; color: var(--muted); font-size: 12px; line-height: 1.9; }
 .hero-intro strong { color: var(--ink); font-weight: 600; }
-.hero-actions { display: flex; align-items: center; gap: 24px; margin-top: 27px; }
-.btn { display: inline-flex; align-items: center; gap: 14px; padding: 11px 16px; border-radius: 3px; background: var(--green); color: white; font-size: 11px; font-weight: 600; text-decoration: none; transition: background .2s, transform .2s; }
+.hero-actions { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 19px; }
+.btn { display: inline-flex; align-items: center; gap: 12px; padding: 10px 17px; border-radius: 3px; background: var(--green); color: white; font-size: 10px; font-weight: 600; text-decoration: none; transition: background .2s, transform .2s; }
 .btn:hover { transform: translateY(-2px); background: var(--green-dark); }
-.text-link { padding-bottom: 2px; border-bottom: 1px solid #aeb7ae; color: var(--ink); font-size: 11px; font-weight: 500; text-decoration: none; }
+.text-link { padding: 8px 18px; border: 1px solid #e7e5dc; border-radius: 999px; color: #72756f; font-size: 10px; font-weight: 500; text-decoration: none; }
 .text-link span { margin-left: 5px; color: var(--clay); }
-.hero-note { display: flex; align-items: center; gap: 9px; margin-top: 34px; color: #727a73; font-size: 9px; font-weight: 500; letter-spacing: .025em; }
-.note-dot { width: 7px; aspect-ratio: 1; border-radius: 50%; background: var(--clay); }
-.hero-portrait { position: relative; isolation: isolate; justify-self: end; width: 326px; margin-right: 14px; }
-.hero-portrait::before { position: absolute; z-index: -1; inset: 18px -16px -16px 16px; background: var(--sage); content: ''; }
-.hero-portrait::after { position: absolute; top: 24px; right: -27px; padding: 9px 12px; background: var(--clay); color: white; content: 'CLASS 9'; font-size: 9px; font-weight: 600; letter-spacing: .1em; transform: rotate(3deg); }
-.hero-portrait img { width: 100%; height: 390px; border: 6px solid var(--white); object-fit: cover; object-position: 50% 25%; }
-.hero-portrait figcaption { display: flex; justify-content: space-between; gap: 8px; margin-top: 19px; font-size: 9px; font-weight: 600; }
-.hero-portrait figcaption span:last-child { color: #777e77; font-weight: 400; }
-.scroll-cue { position: absolute; bottom: 23px; left: max(28px, calc((100vw - 1120px)/2)); display: flex; align-items: center; gap: 9px; color: #6f776f; font-size: 8px; font-weight: 600; letter-spacing: .12em; text-decoration: none; text-transform: uppercase; }
-.scroll-cue b { color: var(--clay); font-size: 15px; font-weight: 500; }
+.hero-portrait { position: relative; width: 286px; margin: 0; }
+.portrait-frame { position: relative; height: 395px; overflow: hidden; border: 6px solid var(--white); border-radius: 150px 150px 2px 2px; background: #eee9dc; box-shadow: 0 10px 32px rgba(44,48,41,.12); }
+.portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; transform: scale(1.55); }
+.hello-sticker { position: absolute; right: -10px; bottom: 28px; padding: 10px 17px; border-radius: 999px; background: white; box-shadow: 0 6px 18px rgba(37,47,40,.12); color: var(--green-dark); font-size: 13px; font-style: italic; font-weight: 600; }
+.hero-portrait figcaption { display: block; margin-top: 12px; color: #89948b; font-size: 9px; font-weight: 500; text-align: center; }
+.hero-portrait figcaption span { color: #adb2aa; }
+.hero-hobbies { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px 28px; margin-top: 24px; list-style: none; }
+.hero-hobbies li { padding: 2px 0; color: #8c918b; font-size: 10px; font-weight: 500; }
 
 /* Content sections */
 .section { padding-block: 105px; }
@@ -135,9 +135,9 @@ footer { padding-block: 20px; border-top: 1px solid var(--line); background: var
 @media (max-width: 850px) {
   .container { width: min(100% - 40px, 700px); }
   nav { gap: 17px; }
-  .hero-grid { grid-template-columns: 1fr 290px; gap: 43px; }
+  .hero-grid { gap: 16px; }
   .hero-portrait { width: 260px; }
-  .hero-portrait img { height: 350px; }
+  .portrait-frame { height: 370px; }
   .about-section, .school-grid { gap: 45px; }
   .achievement-grid { gap: 40px; }
 }
@@ -148,17 +148,16 @@ footer { padding-block: 20px; border-top: 1px solid var(--line); background: var
   .logo { font-size: 12px; }
   nav { width: 100%; gap: 18px; overflow-x: auto; padding: 2px 0 5px; white-space: nowrap; }
   nav a { font-size: 9px; }
-  .hero-grid { min-height: auto; grid-template-columns: 1fr; gap: 34px; padding-block: 46px 73px; }
-  .hero h1 { margin-block: 17px; font-size: clamp(42px, 11vw, 55px); }
+  .hero-grid { min-height: auto; gap: 17px; padding-block: 34px 54px; }
+  .hero h1 { margin-block: 11px; font-size: clamp(43px, 11vw, 55px); }
   .hero-intro { font-size: 12px; }
-  .hero-actions { flex-wrap: wrap; gap: 15px; margin-top: 21px; }
-  .hero-note { margin-top: 22px; font-size: 8px; }
-  .hero-portrait { justify-self: center; width: 205px; margin: 0; }
-  .hero-portrait img { height: 258px; border-width: 5px; }
-  .hero-portrait::before { inset: 11px -10px -10px 10px; }
-  .hero-portrait::after { top: 19px; right: -24px; padding: 7px 9px; font-size: 8px; }
-  .hero-portrait figcaption { margin-top: 15px; font-size: 8px; }
-  .scroll-cue { bottom: 18px; left: 18px; font-size: 7px; }
+  .hero-actions { flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+  .hero-portrait { width: 242px; }
+  .portrait-frame { height: 330px; border-width: 5px; }
+  .hello-sticker { right: -8px; bottom: 22px; padding: 8px 14px; font-size: 11px; }
+  .hero-portrait figcaption { margin-top: 10px; font-size: 8px; }
+  .hero-hobbies { gap: 7px 22px; margin-top: 17px; }
+  .hero-hobbies li { font-size: 9px; }
   .section { padding-block: 70px; }
   .section h2, .achievement-section h2 { font-size: 36px; }
   .about-section, .school-grid, .achievement-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -187,4 +186,59 @@ footer { padding-block: 20px; border-top: 1px solid var(--line); background: var
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+
+/* A more balanced, editorial introduction */
+.hero { background: #f5f3ed; }
+.hero-grid {
+  min-height: 650px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(260px, .82fr);
+  align-items: center;
+  gap: clamp(50px, 8vw, 112px);
+  padding-block: 58px 68px;
+}
+.hero-portrait { grid-column: 2; grid-row: 1; width: min(100%, 350px); justify-self: end; }
+.portrait-frame {
+  width: 100%;
+  aspect-ratio: 1;
+  height: auto;
+  border: 8px solid var(--white);
+  border-radius: 50%;
+  background: var(--sage);
+  box-shadow: 18px 18px 0 #e3e9df;
+}
+.portrait-frame img { object-position: 50% 23%; }
+.hero-portrait figcaption { margin-top: 18px; color: var(--ink); font-size: 11px; text-align: left; }
+.hero-portrait figcaption span { color: var(--muted); }
+.hero-text { grid-column: 1; grid-row: 1; max-width: 580px; text-align: left; }
+.hero .eyebrow { justify-content: flex-start; }
+.hero h1 { margin: 21px 0 3px; color: var(--ink); font-size: clamp(58px, 7.1vw, 88px); letter-spacing: -.075em; line-height: 1.02; }
+.hero h1 em { color: var(--green); }
+.hero-role { color: var(--clay); font-size: 12px; font-weight: 600; letter-spacing: .015em; }
+.hero-intro { max-width: 450px; margin: 22px 0 0; font-size: 14px; line-height: 1.9; }
+.hero-actions { justify-content: flex-start; margin-top: 27px; }
+.hero-hobbies { justify-content: flex-start; gap: 8px; margin-top: 28px; }
+.hero-hobbies li { padding: 5px 12px; border: 1px solid #dfe1d8; border-radius: 999px; color: #626d64; font-size: 10px; }
+
+@media (max-width: 850px) {
+  .hero-grid { min-height: 580px; grid-template-columns: minmax(0, 1.2fr) minmax(210px, .8fr); gap: 38px; }
+  .hero-portrait { width: min(100%, 285px); }
+  .hero h1 { font-size: clamp(51px, 7vw, 68px); }
+  .hero-intro { font-size: 12px; }
+}
+
+@media (max-width: 640px) {
+  .hero-grid { min-height: 0; display: flex; flex-direction: column; gap: 28px; padding-block: 36px 54px; }
+  .hero-portrait { width: min(75vw, 260px); justify-self: auto; }
+  .portrait-frame { width: 100%; aspect-ratio: 1; height: auto; border-width: 6px; box-shadow: 12px 12px 0 #e3e9df; }
+  .hero-portrait figcaption { margin-top: 13px; font-size: 10px; text-align: center; }
+  .hero-text { max-width: 500px; text-align: center; }
+  .hero .eyebrow { justify-content: center; }
+  .hero h1 { margin: 13px 0 4px; font-size: clamp(45px, 11vw, 63px); }
+  .hero-role { font-size: 10px; }
+  .hero-intro { margin: 17px auto 0; font-size: 12px; }
+  .hero-actions, .hero-hobbies { justify-content: center; }
+  .hero-actions { margin-top: 19px; }
+  .hero-hobbies { margin-top: 21px; }
 }
